@@ -20,3 +20,7 @@ https://qiita.com/seriru13/items/c2f5192615162c4c3f47
 %f float
 %f double
 ```
+
+### 知識
+
+C言語におけるNull文字 = `\0`
