@@ -49,3 +49,14 @@ pythonディレクトリ配下でも`.py`ファイルで実装
   ```
     $ python3 rpn.py 37+621-*+
   ```
+
+### 中置記法から後置記法への変換プログラム
+
+対象ファイル
+
+  - infix_postfix.c
+
+  ```
+    $ gcc -o infix_postfix infix_postfix.c STACK_array.c
+    $ ./infix_postfix "(5*(((9+8)*(4*6))+7))"
+  ```
