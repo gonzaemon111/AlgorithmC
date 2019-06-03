@@ -32,3 +32,20 @@ stack_test.cとstack_array.cは、STACK.hが存在する(STACK.hがインター�
   - stack_linklist.c
 
 
+## 逆ポーランド記法 (後置記法)
+
+対象ファイル
+  - eval_postfix.c
+  - Item.h
+  - stack_array.c
+
+  ```
+    $ gcc -o eval_postfix eval_postfix.c stack_array.c
+    $ ./eval_postfix "5 9 8 + *"    # 5 * (9 + 8)
+  ```
+
+pythonディレクトリ配下でも`.py`ファイルで実装
+
+  ```
+    $ python3 rpn.py 37+621-*+
+  ```
