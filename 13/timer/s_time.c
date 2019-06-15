@@ -17,7 +17,6 @@ void selection(Item a[], int l, int r) {
 
 int main(int argc, char *argv[]) {
   clock_t start, end;
-  start = clock();
   int i, N = atoi(argv[1]), sw = atoi(argv[2]);
   int *a = malloc(N*sizeof(int));
   srand(1);
@@ -26,6 +25,7 @@ int main(int argc, char *argv[]) {
       a[i] = 1000*(1.0*rand()/RAND_MAX);
   else
     for (N = 0; scanf("%d", &a[N]) == 1; N++);
+  start = clock();
   selection(a, 0, N-1);
   end = clock();
   // for (i = 0; i < N; i++) printf("%3d ", a[i]);
