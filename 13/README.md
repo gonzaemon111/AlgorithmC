@@ -53,3 +53,14 @@ file : insertion.c
 - 比較回数 : <img src="https://latex.codecogs.com/gif.latex?N^{2}"> 回
 
 - 交換回数 : <img src="https://latex.codecogs.com/gif.latex?N^{2}"> 回
+
+---
+
+|ファイル名|配列の長さ|実行時間[s]|
+|:---:|:---:|:---:|
+|s_time.c|1000|0.001558|
+|s_time.c|10000|0.143750|
+|s_time.c|100000|13.662732|
+
+配列の長さを10倍にすると、実行時間は100倍になっていた。
+つまり、**選択整列法**は配列の長さの累乗に比例する。
